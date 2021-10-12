@@ -17,11 +17,11 @@ body {
     font-style: normal;
 }
 
-/* h1, h2, h3, p {
+h1, h2, h3, p, ul{
     margin: 0;
     padding: 0;
     
-} */
+}
 
 .title-hidden {
     position:absolute;
@@ -37,7 +37,17 @@ body {
 /* header */
 
 .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
     outline: 2px solid red;
+}
+
+.section {
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .header .link {
@@ -99,34 +109,36 @@ body {
 /* Effective solutions for your business */
 
 .hero {
+    text-align: center;
     background-color: var(--hero-footer-bg-color);
     outline: 2px solid tomato;
 }
 
-.hero-title { 
-     margin: 0;
-     padding: 0; 
+.hero-title {       
+    margin-bottom: 30px; 
    
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
-    color: var(--hero-text-color);    
+    line-height: 1.36;       
     letter-spacing: 0.06em;
-    text-align: center;
+    
+    color: var(--hero-text-color); 
+    
 }
 
 .hero-btn {
+    margin-right: auto;
+    margin-left: auto;
     padding: 10px 32px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;    
-    cursor: pointer;
-    text-align: center;
-    letter-spacing: 0.06em;
-    display: flex;
+    cursor: pointer;    
+    letter-spacing: 0.06em;   
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: transparent;
+
     background-color: var(--accent-color);
     color: var(--hero-text-color);
 }
@@ -139,7 +151,7 @@ body {
 /* main content */
 
 .section-title,
-.particular-qualities,
+.qualities-subtitle,
 .section-team-name {
     color: var(--title-text-color);
     letter-spacing: 0.03em;
@@ -148,18 +160,14 @@ body {
 /* particular qualities */
 
 .section-title {
-    margin: 0;
-    padding: 0;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
 }
 
-.particular-qualities {
-    margin: 0;
-    padding: 0;
-
+.qualities-subtitle {
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: var(--primary-font-size);
     line-height: 1.14;
@@ -167,9 +175,7 @@ body {
 }
 
 .qualities-text {
-    margin: 0;
-    padding: 0;
-
+    
     font-weight: 400;
     font-size: var(--primary-font-size);
     line-height: 1.71;
@@ -178,24 +184,28 @@ body {
 
 /* what we doing */
 
+.whatwedo {
+    margin-bottom: 50px;
+}
+
 /* our team */
+
+.our-team {
+    margin-bottom: 50px;
+}
 
 .section>.container {
     background-color: var(--secondary-bg-color);
 }
 
 .section-team-name {
-    margin: 0;
-    padding: 0;
-
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
 }
 
 .section-team-position {
-    margin: 0;
-    padding: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
@@ -235,8 +245,6 @@ body {
 }
 
 .address-list {
-    margin: 0;
-    padding: 0;
     list-style: none;
 }
 
@@ -258,14 +266,31 @@ body {
 
 /* Портфолио */
 
+.container-filter {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 94px;
+    margin-bottom: 94px;
+
+    outline: 2px solid black;
+}
 
 .filter {
     display: flex;
+    justify-content: center;
     margin-bottom: 34px;
+}
+
+.filter-item {
+    list-style: none;
 }
 
 
 .filter-btn {  
+    margin-bottom: 50px;
     padding: 6px 24px;  
     border-radius: 4px;
     min-width: 73px;
@@ -278,6 +303,10 @@ body {
     cursor: pointer;
     color: var(--title-text-color);
     background: #F5F4FA;
+}
+
+.filter-item:not(:last-child) {
+    margin-right: 9px;
 }
 
 .filter .current {
@@ -303,6 +332,7 @@ body {
 
 
 .cards-title {
+    margin-bottom: 4px;
     color: var(--title-text-color);
 }
 
