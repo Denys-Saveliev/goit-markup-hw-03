@@ -17,11 +17,11 @@ body {
     font-style: normal;
 }
 
-ul {
+/* h1, h2, h3, p {
     margin: 0;
     padding: 0;
-    list-style: none;
-}
+    
+} */
 
 .title-hidden {
     position:absolute;
@@ -35,6 +35,10 @@ ul {
 /* Studio page */
 
 /* header */
+
+.container {
+    outline: 2px solid red;
+}
 
 .header .link {
     text-decoration: none;
@@ -55,11 +59,14 @@ ul {
     color: #000000;
 }
 
-.list {
+.list { 
+    margin: 0;
+    padding: 0;
     font-weight: 500;
     font-size: var(--primary-font-size);
     line-height: 1.14;
     letter-spacing: 0.02em;
+    list-style: none;
 }
 
 .nav-bar-pages .link {
@@ -84,14 +91,22 @@ ul {
     color: var(--accent-color);
 }
 
+.bottom-line {
+    border-bottom: 1px solid #ECECEC;
+    width: 1600px;
+}
 
 /* Effective solutions for your business */
 
 .hero {
     background-color: var(--hero-footer-bg-color);
+    outline: 2px solid tomato;
 }
 
-.hero-title {    
+.hero-title { 
+     margin: 0;
+     padding: 0; 
+   
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -133,6 +148,8 @@ ul {
 /* particular qualities */
 
 .section-title {
+    margin: 0;
+    padding: 0;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -140,6 +157,9 @@ ul {
 }
 
 .particular-qualities {
+    margin: 0;
+    padding: 0;
+
     font-weight: 700;
     font-size: var(--primary-font-size);
     line-height: 1.14;
@@ -147,6 +167,9 @@ ul {
 }
 
 .qualities-text {
+    margin: 0;
+    padding: 0;
+
     font-weight: 400;
     font-size: var(--primary-font-size);
     line-height: 1.71;
@@ -162,12 +185,17 @@ ul {
 }
 
 .section-team-name {
+    margin: 0;
+    padding: 0;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
 }
 
 .section-team-position {
+    margin: 0;
+    padding: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
@@ -205,6 +233,15 @@ ul {
     line-height: 1.71;
     font-style: normal;
 }
+
+.address-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
 .address-list .link {
     color: rgba(255, 255, 255, 0.6);
     letter-spacing: 0.03em;
@@ -221,9 +258,6 @@ ul {
 
 /* Портфолио */
 
-.container {
-      
-}
 
 .filter {
     display: flex;
