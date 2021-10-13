@@ -36,8 +36,7 @@ h1, h2, h3, p, ul{
 
 /* header */
 
-.container {
-    display: flex;
+.container {    
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -46,28 +45,49 @@ h1, h2, h3, p, ul{
     outline: 2px solid red;
 }
 
-.list { 
-    margin: 0;
-    padding: 0;
-    font-weight: 500;
-    font-size: var(--primary-font-size);
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    list-style: none;
+.border-bottom {
+    border-bottom: 1px solid #ECECEC;
 }
 
-.section {
-    margin-top: 0;
-    margin-bottom: 50px;
-}
-
-.main-nav ul {
+.header-container {
     display: flex;
 }
 
-.header .link {
+.nav-bar {
+    display: flex;
+}
+
+.site-nav {
+    display: flex;
+}
+
+.auth-nav {
+    display: flex;
+}
+
+.site-nav-link { 
+    font-weight: 500;
+    font-size: var(--title-text-color);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     text-decoration: none;
-    }
+}
+
+.auth-nav-link {
+    font-weight: 500;
+    font-size: var(--primary-text-color);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.auth-nav-item {
+     list-style: none;
+}
+
+.site-nav-item {    
+    list-style: none;
+}
 
 .nav-bar-logo {
     color: var(--accent-color);
@@ -77,8 +97,7 @@ h1, h2, h3, p, ul{
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-}
-    
+}    
 
 .nav-bar-logo>span {
     color: #000000;
@@ -86,33 +105,32 @@ h1, h2, h3, p, ul{
 
 
 
-.nav-bar-pages .link {
-    color: var(--title-text-color);    
-}
-
-.nav-bar-pages .link:hover,
-.nav-bar-pages .link:focus {
+.site-nav .site-nav-link:hover,
+.site-nav .site-nav-link:focus {
    color: var(--accent-color); 
 }
 
-.nav-bar-auth .link {
+.auth-nav .site-nav-link {
     color: var(--primary-text-color);
 }
 
-.nav-bar-auth .link:hover,
-.nav-bar-auth .link:focus {
+.auth-nav .auth-nav-link:hover,
+.auth-nav .auth-nav-link:focus {
     color: var(--accent-color);
 }
 
-.nav-bar-pages .current {
+.current {
     color: var(--accent-color);
 }
 
-.bottom-line {
-    border-bottom: 1px solid #ECECEC;
-}
+
 
 /* Effective solutions for your business */
+
+.section {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
 
 .hero {
     text-align: center;
